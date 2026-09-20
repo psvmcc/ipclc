@@ -8,14 +8,14 @@ Requirements: current stable Rust and [just](https://github.com/casey/just). CI 
 
 ## Homebrew
 
-Once the `psvmcc/homebrew-ipclc` tap repository contains `Formula/ipclc.rb`, install with:
+Once the `psvmcc/homebrew-tap` tap repository contains `Formula/ipclc.rb`, install with:
 
 ```console
-brew tap psvmcc/ipclc
-brew install ipclc
+brew tap psvmcc/tap
+brew install psvmcc/tap/ipclc
 ```
 
-The tap formula builds the selected release tag with Cargo. The source repository includes the canonical formula under `Formula/ipclc.rb`; release tags update the tap through the `HOMEBREW_TAP_TOKEN` repository secret.
+The release formula installs a prebuilt platform binary from GitHub Release and verifies its SHA-256. It does not require Rust or Cargo on the user's machine. Release tags update `psvmcc/homebrew-tap` through the `HOMEBREW_TAP_TOKEN` repository secret.
 
 ```console
 just check
