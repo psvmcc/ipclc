@@ -1,0 +1,6 @@
+[toolchain]
+# Development and release builds follow the current stable Rust toolchain.
+# CI separately checks the documented minimum supported version (1.84.0).
+channel = "stable"
+components = ["rustfmt", "clippy"]
+profile = "minimal"

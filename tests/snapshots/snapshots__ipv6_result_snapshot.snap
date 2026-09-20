@@ -1,0 +1,13 @@
+---
+source: tests/snapshots.rs
+expression: "String::from_utf8(output.stdout).unwrap()"
+---
+Address:          2001:db8:1234:5678::42 (2001:0db8:1234:5678:0000:0000:0000:0042)
+Address type:     Documentation
+CIDR:             2001:db8:1234:5678::42/64 (2001:0db8:1234:5678:0000:0000:0000:0042/64)
+Prefix length:    64
+Netmask:          ffff:ffff:ffff:ffff::
+Network:          2001:db8:1234:5678:: (2001:0db8:1234:5678:0000:0000:0000:0000)
+First address:    2001:db8:1234:5678:: (2001:0db8:1234:5678:0000:0000:0000:0000)
+Last address:     2001:db8:1234:5678:ffff:ffff:ffff:ffff (2001:0db8:1234:5678:ffff:ffff:ffff:ffff)
+Total addresses:  18446744073709551616 (2^64)

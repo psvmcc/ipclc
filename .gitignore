@@ -1,0 +1,34 @@
+# Rust build output
+/target/
+/fuzz/target/
+
+# Fuzzing artifacts and generated corpus
+/fuzz/artifacts/
+/fuzz/corpus/
+
+# Coverage output
+/coverage/
+/lcov.info
+/*.profraw
+
+# Release and packaging output
+/dist/
+
+# Snapshot test temporary files
+*.snap.new
+
+# Editors and IDEs
+/.idea/
+/.vscode/
+*.swp
+*.swo
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local environment files
+.env
+.env.*
+!.env.example

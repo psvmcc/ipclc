@@ -1,0 +1,14 @@
+---
+source: tests/snapshots.rs
+expression: "String::from_utf8(output.stdout).unwrap()"
+---
+Address:          192.168.10.42
+Address type:     Private
+CIDR:             192.168.10.42/24
+Netmask:          255.255.255.0
+Wildcard:         0.0.0.255
+Network:          192.168.10.0
+Broadcast:        192.168.10.255
+Host range:       192.168.10.1 - 192.168.10.254
+Total addresses:  256 (2^8)
+Usable hosts:     254
